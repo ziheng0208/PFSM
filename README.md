@@ -68,9 +68,5 @@ python test.py --dataset_path ./data/test --sub_dir validation --checkpoint ./ch
 python scripts/compute_model_complexity.py --input-channels 12 --height 512 --width 512
 ```
 
-## Notes
-
-This repository contains code only. Datasets, trained weights, generated results, and manuscript files are not included.
-
 ## dataset
 The dataset can be downloaded from: https://github.com/weifeng827/ZeroDiff-Net/blob/main/README.md
