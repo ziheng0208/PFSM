@@ -1,13 +1,13 @@
 # PFSM
 
-PFSM is a PyTorch implementation of a polarization-aware frequency-decoupled state space model for underwater polarization image restoration.
-
+This repository provides the PyTorch implementation of **PFSM: Polarization-Aware Frequency-Decoupled State Space Modeling for Underwater Polarization Image Restoration**.
 The model takes four RGB polarization observations as a 12-channel tensor and restores the corresponding four-angle polarization images. The main components include:
 
 - Spatial polarization transformation for Stokes-, DoLP-, and AoP-related feature extraction.
 - Wavelet-based frequency decomposition for low-frequency appearance recovery and high-frequency structure restoration.
 - State-space feature modeling for efficient long-range contextual interaction.
 - Dual-domain adaptive fusion for spatial-frequency feature alignment.
+
 
 ## Environment
 
