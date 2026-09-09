@@ -73,4 +73,4 @@ python scripts/compute_model_complexity.py --input-channels 12 --height 512 --wi
 This repository contains code only. Datasets, trained weights, generated results, and manuscript files are not included.
 
 ## dataset
-The dataset can be downloaded from: [link will be released]
+The dataset can be downloaded from: https://github.com/weifeng827/ZeroDiff-Net/blob/main/README.md
