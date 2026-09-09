@@ -19,7 +19,16 @@ pip install -r requirements.txt
 
 The state-space branch requires `mamba-ssm`. Please install a version compatible with your CUDA and PyTorch environment.
 
-## Dataset Format
+
+## Dataset
+
+The underwater polarization dataset used in this paper is publicly available from the ZeroDiff-Net repository:
+
+https://github.com/weifeng827/ZeroDiff-Net/blob/main/README.md
+
+In this work, we use the complete tank scene dataset with ground-truth references provided in the  dataset link of ZeroDiff-Net. The dataset contains 362 original four-angle polarization image groups. We randomly select 72 original image groups as the independent test subset before data augmentation. The remaining 290 image groups are used for training and validation. Horizontal and vertical flipping are applied only to the non-test samples, producing 1160 augmented samples, among which 928 and 232 samples are used for training and validation, respectively. No test image or its augmented variants are included in the training or validation subsets.
+
+Please organize the downloaded dataset according to the folder structure below before training and testing.
 
 The training and validation data are expected to follow this folder structure:
 
@@ -68,5 +77,4 @@ python test.py --dataset_path ./data/test --sub_dir validation --checkpoint ./ch
 python scripts/compute_model_complexity.py --input-channels 12 --height 512 --width 512
 ```
 
-## dataset
-The dataset can be downloaded from: https://github.com/weifeng827/ZeroDiff-Net/blob/main/README.md
+
